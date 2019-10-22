@@ -1,0 +1,138 @@
+/* pages/walk/walk.wxss */
+.sport{
+  background: #f5f5f5;
+}
+.sport__top{
+  background: #fff;
+  margin-bottom: 8px;
+  border-bottom: 8px solid #f5f5f5;
+}
+.head__title{
+  font-size: 18px;
+  color: #26A5FD;
+  text-align: center;
+  display: block;
+  padding: 14px 0;
+  border-top: 1px solid #f6f6f6;
+}
+.stepCount{
+  width: 130px;
+  height: 130px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #26A5FD;
+  margin: 0 auto;
+}
+.stepCount__img{
+  width: 26px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.stepCount__number{
+  text-align: center;
+  display: block;
+  color: #26A5FD;
+  font-size: 32px;
+}
+.stepCount__desc{
+  font-size: 14px;
+  color: #26A5FD;
+  text-align: center;
+  display: block;
+}
+.sport__sug{
+  background: #fff;
+  margin: 0 16px;
+  padding: 13px;
+  border-radius: 2px;
+  border-bottom: 8px solid #f5f5f5;
+}
+.sport__title{
+  font-family: 'PingFangSC-Regular';
+  font-size: 16px;
+  color: #3C3939;
+  display: block;
+}
+.sport__sug__desc{
+  font-size: 12px;
+  color: #5C5C5C;
+  display: block;
+  padding-top: 5px;
+}
+.sport__burn{
+  display: block;
+  padding: 22px;
+  text-align: center;
+}
+.sport__burn__img{
+  width: 12px;
+  height: 17px;
+  top: 2px;
+  position: relative;
+  padding-right: 6px;
+}
+.sport__burn__desc{
+  color: #26A5FD;
+  font-size: 16px;
+}
+.burn__count{
+  padding-right: 5px;
+}
+.sport__record{
+  background: #fff;
+  margin: 0 16px;
+  padding: 13px;
+}
+
+.menu_box{
+ display: flex;
+ /* height: 80rpx; */
+ margin-top: 13px;
+}
+.menu1,.menu2{
+ /* flex: 1; */
+ font-size:28rpx;
+ line-height: 68rpx;
+ height: 68rpx;
+ text-align: center;
+ width: 100px;
+ margin-right: 8px;
+}
+.borders{
+ border: 1rpx solid #26A5FD;
+ color: #26A5FD;
+ border-radius: 30px;
+}
+.border{
+ border: 1rpx solid #979797;
+ color: #3C3939;
+ border-radius: 30px;
+}
+/* .tab1,.tab2{
+ height: 300rpx;
+ /* background: #23bff3;
+} */
+ec-canvas {
+  width: 100%;
+  height: 300px;
+}
+#mychart-dom-line1{
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid #ccc; */
+}
+.tab2{
+  /* border: 1px solid #f00; */
+}
+.tab1,.tab2{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}

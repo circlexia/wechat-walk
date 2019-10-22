@@ -1,0 +1,40 @@
+<!--pages/walk/walk.wxml-->
+<view class="sport">
+<loading hidden="{{loadingHidden}}">
+ 加载中...
+</loading>
+<!-- <button type="default" bindtap="loadingTap">点击弹出loading</button> -->
+<!-- 运动步数 -->
+  <view class="sport__top">
+    <text class="head__title">今日步数</text>
+    <view class="stepCount">
+      <image class="stepCount__img" src="foot.png"></image>
+      <text class="stepCount__number">{{step}}</text>
+      <text class="stepCount__desc">步</text>
+    </view>
+    <!-- 燃脂描述 -->
+    <view class="sport__burn">
+    <image class="sport__burn__img" src="fire.png"></image>
+      <text class="sport__burn__desc">共燃脂<text class="burn__count">{{calory}}</text>cal</text>
+    </view>
+  </view>
+  <!-- 运动建议 -->
+  <view class="sport__sug">
+    <text class="sport__title">本周运动量评估</text>
+    <text class="sport__sug__desc">{{evaluate}}</text>
+  </view>
+  <!-- 步数记录 -->
+  <view class="sport__record">
+    <text class="sport__title">运动记录</text>
+    <view class="menu_box">
+      <text class='menu1 {{menuTapCurrent=="0"?"borders":"border"}}' data-current="0" catchtap="menuTap">最近7天</text>
+      <text class='menu2 {{menuTapCurrent=="1"?"borders":"border"}}' data-current="1" catchtap="menuTap">最近30天</text>
+      </view>
+      <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+        <ec-canvas id="mychart-one" canvas-id="mychart-multi-one" ec="{{ ecOne}}"></ec-canvas>
+      </view>
+      <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+        <ec-canvas id="mychart-two" canvas-id="mychart-multi-two" ec="{{ ecTwo }}"></ec-canvas>
+      </view>
+  </view>
+</view>
